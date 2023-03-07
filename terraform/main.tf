@@ -2,16 +2,16 @@ module "sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "ilia041+sandbox@gmail.com"
-    AccountName               = "sandbox-aft"
-    ManagedOrganizationalUnit = "Sandbox"
+    AccountEmail              = "ilia041+test@gmail.com"
+    AccountName               = "test"
+    ManagedOrganizationalUnit = "Security"
     SSOUserEmail              = "ilia041+sandbox@gmail.com"
-    SSOUserFirstName          = "Sandbox"
-    SSOUserLastName           = "AFT"
+    SSOUserFirstName          = "Hello"
+    SSOUserLastName           = "There"
   }
 
   account_tags = {
-    "Learn Tutorial" = "AFT"
+    "test" = "test"
   }
 
   change_management_parameters = {
@@ -23,5 +23,5 @@ module "sandbox" {
     group = "non-prod"
   }
 
-  account_customizations_name = "sandbox"
+  account_customizations_name = "test"
 }
